@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <style>
+        label {
+           outline: 0;
+           margin: 10px;
+           width: 20%;
+        }
+        input {
+            width: 70%;
+        }
+        .test {
+            width: 30%;
+        }
+        input[type=password] {
+            width: 60%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" style="margin-top: 100px;">
+       <div class="row justify-content-center">
+        <div class="col-2">
+            <button class="btn btn-primary btn-lg" type="button" data-bs-toggle="modal" data-bs-target="#modal1">Sign in</button>
+        </div>
+       </div>
+    </div>
+    <div class="modal fade" id="modal1" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="modal" aria-labelledby="modal1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal1">Enter you information</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-12">
+                            <label for="#name">Name :</label>
+                            <input type="text" id="name">
+                        </div>
+                    </div>
+                        <div class="col-12">
+                            <label for="#nam2">last name :</label>
+                            <input type="text" id="name2">
+                        </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-target="#modal2" data-bs-toggle="modal">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="modal2" tabindex="-1" aria-hidden="true" aria-labelledby="modal2" >
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modal2">Choose a password</h1>
+                    <button class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-12">
+                            <label class="test" for="#pass1">Password :</label>
+                            <input type="password" id="pass1">
+                        </div>
+                    </div>
+                        <div class="col-12">
+                            <label class="test" for="#pass2">Repeat Password :</label>
+                            <input type="password" id="pass2">
+                        </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modal1">Back</button>
+                    <button class="btn btn-outline-success" data-bs-dismiss="modal">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+</body>
+</html>
