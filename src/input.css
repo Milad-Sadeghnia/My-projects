@@ -7,7 +7,13 @@ body {
 }
 
 .nav {
-    @apply bg-neutral-900 h-11;
+    @apply bg-neutral-900 h-11 w-full fixed z-10;
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.17);
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4.4px);
+-webkit-backdrop-filter: blur(4.4px);
+
 }
 
 .navbar {
@@ -43,11 +49,13 @@ ul.nav-link a {
 }
 
 .nav-buy {
-    @apply  inline-block text-center mx-auto my-auto p-3;
+    @apply inline-block text-center mx-auto my-auto p-3;
 }
+
 .banner1 {
     @apply relative;
 }
+
 .banner1 img {
     @apply h-[550px] relative;
 }
@@ -71,6 +79,7 @@ ul.nav-link a {
 .banner1-button a {
     @apply mx-7 text-blue-500 text-2xl hover:underline;
 }
+
 .banner2 {
     @apply relative;
 }
@@ -98,6 +107,7 @@ ul.nav-link a {
 .banner2-button a {
     @apply mx-7 text-blue-700 text-2xl hover:underline;
 }
+
 .banner3 {
     @apply relative;
 }
@@ -109,16 +119,19 @@ ul.nav-link a {
 .banner3-content {
     @apply absolute top-[65px] left-0 right-0 m-auto;
 }
+
 .banner3-logo {
     @apply left-0 right-0 m-auto;
 }
+
 .banner3-text {
     @apply text-gray-100 text-2xl mt-2 text-center;
 }
+
 .banner3-button {
     @apply mt-5 w-1/6 absolute left-0 right-0 m-auto;
 }
+
 .banner3-button a {
     @apply mx-7 text-blue-700 text-2xl hover:underline;
 }
-

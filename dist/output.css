@@ -540,9 +540,17 @@ body {
 }
 
 .nav {
+  position: fixed;
+  z-index: 10;
   height: 2.75rem;
+  width: 100%;
   --tw-bg-opacity: 1;
   background-color: rgb(23 23 23 / var(--tw-bg-opacity));
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.17);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.4px);
+  -webkit-backdrop-filter: blur(4.4px);
 }
 
 .navbar {
@@ -781,4 +789,3 @@ ul.nav-link a:hover {
 .banner3-button a:hover {
   text-decoration-line: underline;
 }
-
