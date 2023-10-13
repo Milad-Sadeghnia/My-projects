@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply bg-white;
+}
+
+.nav {
+    @apply bg-neutral-900 h-11;
+}
+
+.navbar {
+    @apply w-[63%] grid grid-cols-11 gap-4 h-11 mx-auto;
+}
+
+.nav-logo {
+    @apply col-span-1 my-auto ms-[70px];
+}
+
+.nav-item {
+    @apply col-span-8 self-center ms-[50px];
+}
+
+.nav-options {
+    @apply col-span-1 self-center grid grid-cols-2;
+}
+
+ul.nav-link {
+    @apply m-0 p-0;
+}
+
+ul.nav-link li {
+    @apply inline;
+}
+
+ul.nav-link a {
+    @apply inline-block p-2 mx-[3px] text-zinc-400 text-sm hover:text-zinc-300 transition-all delay-75 duration-300;
+}
+
+.nav-search {
+    @apply inline-block text-center mx-auto my-auto p-3;
+}
+
+.nav-buy {
+    @apply  inline-block text-center mx-auto my-auto p-3;
+}
+.banner1 {
+    @apply relative;
+}
+.banner1 img {
+    @apply h-[550px] relative;
+}
+
+.banner1-text {
+    @apply absolute top-[60px] start-0 end-0 text-4xl text-center;
+}
+
+.banner1-title {
+    @apply text-gray-100 text-5xl font-bold;
+}
+
+.banner1-content {
+    @apply text-gray-100 text-2xl mt-2;
+}
+
+.banner1-button {
+    @apply mt-4;
+}
+
+.banner1-button a {
+    @apply mx-7 text-blue-500 text-2xl hover:underline;
+}
+.banner2 {
+    @apply relative;
+}
+
+.banner2 img {
+    @apply h-[550px];
+}
+
+.banner2-text {
+    @apply absolute top-[60px] start-0 end-0 text-4xl text-center;
+}
+
+.banner2-title {
+    @apply text-gray-900 text-5xl font-bold;
+}
+
+.banner2-content {
+    @apply text-gray-900 text-2xl mt-2;
+}
+
+.banner2-button {
+    @apply mt-4;
+}
+
+.banner2-button a {
+    @apply mx-7 text-blue-700 text-2xl hover:underline;
+}
+.banner3 {
+    @apply relative;
+}
+
+.banner3-img {
+    @apply h-[580px];
+}
+
+.banner3-content {
+    @apply absolute top-[65px] left-0 right-0 m-auto;
+}
+.banner3-logo {
+    @apply left-0 right-0 m-auto;
+}
+.banner3-text {
+    @apply text-gray-100 text-2xl mt-2 text-center;
+}
+.banner3-button {
+    @apply mt-5 w-1/6 absolute left-0 right-0 m-auto;
+}
+.banner3-button a {
+    @apply mx-7 text-blue-700 text-2xl hover:underline;
+}
+
