@@ -547,10 +547,10 @@ body {
   --tw-bg-opacity: 1;
   background-color: rgb(23 23 23 / var(--tw-bg-opacity));
   /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.17);
+  background: rgba(23, 23, 23, 0.87);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4.4px);
-  -webkit-backdrop-filter: blur(4.4px);
+  backdrop-filter: blur(5.9px);
+  -webkit-backdrop-filter: blur(5.9px);
 }
 
 .navbar {
@@ -688,6 +688,7 @@ ul.nav-link a:hover {
 
 .banner2 {
   position: relative;
+  margin-top: 0.75rem;
 }
 
 .banner2 img {
@@ -739,6 +740,7 @@ ul.nav-link a:hover {
 
 .banner3 {
   position: relative;
+  margin-top: 0.75rem;
 }
 
 .banner3-img {
@@ -788,4 +790,110 @@ ul.nav-link a:hover {
 
 .banner3-button a:hover {
   text-decoration-line: underline;
+}
+
+footer {
+  margin: auto;
+  margin-top: 0.75rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
+.footer-body {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-top: 1.5rem;
+  font-size: 0.875rem;
+  line-height: 1rem;
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+#hr1 {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  height: 2px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
+.footer-content p {
+  margin-bottom: 1rem;
+  font-size: 13px;
+}
+
+.footer-content a {
+  font-weight: 700;
+}
+
+.footer-content a:hover {
+  text-decoration-line: underline;
+}
+
+.footer-links {
+  display: flex;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+.footer-links h3 {
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: rgb(24 24 27 / var(--tw-text-opacity));
+  font-size: 14px;
+}
+
+.footer-links li {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.footer-list {
+  -webkit-margin-end: 3.5rem;
+          margin-inline-end: 3.5rem;
+  margin-bottom: 1.75rem;
+}
+
+.footer-list a:hover {
+  text-decoration-line: underline;
+}
+
+.footer-list a {
+  font-size: 13px;
+}
+
+.footer-copyright {
+  margin-top: 1.5rem;
+}
+
+.footer-copyright>p {
+  font-size: 13px;
+}
+
+.footer-copyright a {
+  --tw-text-opacity: 1;
+  color: rgb(59 130 246 / var(--tw-text-opacity));
+  text-decoration-line: underline;
+}
+
+#hr2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  height: 2px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
+.footer-copyright-footer {
+  display: flex;
+}
+
+.footer-copyright-footer p {
+  -webkit-margin-end: auto;
+          margin-inline-end: auto;
+  margin-bottom: 2.5rem;
+  font-size: 13px;
 }

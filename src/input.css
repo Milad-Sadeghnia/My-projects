@@ -8,11 +8,11 @@ body {
 
 .nav {
     @apply bg-neutral-900 h-11 w-full fixed z-10;
-    /* From https://css.glass */
-background: rgba(255, 255, 255, 0.17);
+/* From https://css.glass */
+background: rgba(23, 23, 23, 0.87);
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(4.4px);
--webkit-backdrop-filter: blur(4.4px);
+backdrop-filter: blur(5.9px);
+-webkit-backdrop-filter: blur(5.9px);
 
 }
 
@@ -81,7 +81,7 @@ ul.nav-link a {
 }
 
 .banner2 {
-    @apply relative;
+    @apply relative mt-3;
 }
 
 .banner2 img {
@@ -109,7 +109,7 @@ ul.nav-link a {
 }
 
 .banner3 {
-    @apply relative;
+    @apply relative mt-3;
 }
 
 .banner3-img {
@@ -134,4 +134,52 @@ ul.nav-link a {
 
 .banner3-button a {
     @apply mx-7 text-blue-700 text-2xl hover:underline;
+}
+footer {
+    @apply bg-gray-100 m-auto mt-3;
+}
+.footer-body {
+    @apply w-1/2 mx-auto text-sm pt-6 text-gray-500 leading-4;
+}
+#hr1 {
+ @apply h-[2px] bg-gray-300 mt-8 mb-6;
+}
+.footer-content p {
+    @apply mb-4 text-[13px];
+}
+.footer-content a {
+    @apply hover:underline font-bold;
+}
+.footer-links {
+    @apply flex h-full; flex-wrap: wrap;
+}
+.footer-links h3 {
+    @apply text-zinc-900 font-semibold; font-size: 14px
+}
+.footer-links li {
+    @apply my-2 text-sm;
+}
+.footer-list {
+    @apply  me-14 mb-7;
+}
+.footer-list a {
+    @apply  hover:underline; font-size: 13px;
+}
+.footer-copyright {
+    @apply mt-6;
+}
+.footer-copyright>p {
+    font-size: 13px;
+}
+.footer-copyright a {
+    @apply text-blue-500 underline;
+}
+#hr2{
+    @apply h-[2px] bg-gray-300 my-2;
+}
+.footer-copyright-footer {
+    @apply flex;
+}
+.footer-copyright-footer p {
+    @apply me-auto mb-10;     font-size: 13px;
 }
