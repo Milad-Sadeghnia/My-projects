@@ -558,17 +558,17 @@ body {
   margin-right: auto;
   display: grid;
   height: 2.75rem;
-  width: 63%;
+  width: 75%;
   grid-template-columns: repeat(11, minmax(0, 1fr));
   gap: 1rem;
 }
 
 .nav-logo {
-  grid-column: span 1 / span 1;
+  grid-column: span 2 / span 2;
   margin-top: auto;
   margin-bottom: auto;
-  -webkit-margin-start: 70px;
-          margin-inline-start: 70px;
+  -webkit-margin-start: 100px;
+          margin-inline-start: 100px;
 }
 
 .nav-item {
@@ -620,7 +620,6 @@ ul.nav-link a:hover {
   margin-top: auto;
   margin-bottom: auto;
   display: inline-block;
-  padding: 0.75rem;
   text-align: center;
 }
 
@@ -630,7 +629,6 @@ ul.nav-link a:hover {
   margin-top: auto;
   margin-bottom: auto;
   display: inline-block;
-  padding: 0.75rem;
   text-align: center;
 }
 

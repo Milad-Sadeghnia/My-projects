@@ -8,20 +8,20 @@ body {
 
 .nav {
     @apply bg-neutral-900 h-11 w-full fixed z-10;
-/* From https://css.glass */
-background: rgba(23, 23, 23, 0.87);
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(5.9px);
--webkit-backdrop-filter: blur(5.9px);
+    /* From https://css.glass */
+    background: rgba(23, 23, 23, 0.87);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.9px);
+    -webkit-backdrop-filter: blur(5.9px);
 
 }
 
 .navbar {
-    @apply w-[63%] grid grid-cols-11 gap-4 h-11 mx-auto;
+    @apply w-[75%] grid grid-cols-11 gap-4 h-11 mx-auto;
 }
 
 .nav-logo {
-    @apply col-span-1 my-auto ms-[70px];
+    @apply col-span-2 my-auto ms-[100px] ;
 }
 
 .nav-item {
@@ -45,11 +45,11 @@ ul.nav-link a {
 }
 
 .nav-search {
-    @apply inline-block text-center mx-auto my-auto p-3;
+    @apply inline-block text-center mx-auto my-auto;
 }
 
 .nav-buy {
-    @apply inline-block text-center mx-auto my-auto p-3;
+    @apply inline-block text-center mx-auto my-auto;
 }
 
 .banner1 {
@@ -135,51 +135,71 @@ ul.nav-link a {
 .banner3-button a {
     @apply mx-7 text-blue-700 text-2xl hover:underline;
 }
+
 footer {
     @apply bg-gray-100 m-auto mt-3;
 }
+
 .footer-body {
     @apply w-1/2 mx-auto text-sm pt-6 text-gray-500 leading-4;
 }
+
 #hr1 {
- @apply h-[2px] bg-gray-300 mt-8 mb-6;
+    @apply h-[2px] bg-gray-300 mt-8 mb-6;
 }
+
 .footer-content p {
     @apply mb-4 text-[13px];
 }
+
 .footer-content a {
     @apply hover:underline font-bold;
 }
+
 .footer-links {
-    @apply flex h-full; flex-wrap: wrap;
+    @apply flex h-full;
+    flex-wrap: wrap;
 }
+
 .footer-links h3 {
-    @apply text-zinc-900 font-semibold; font-size: 14px
+    @apply text-zinc-900 font-semibold;
+    font-size: 14px
 }
+
 .footer-links li {
     @apply my-2 text-sm;
 }
+
 .footer-list {
-    @apply  me-14 mb-7;
+    @apply me-14 mb-7;
 }
+
 .footer-list a {
-    @apply  hover:underline; font-size: 13px;
+    @apply hover:underline;
+    font-size: 13px;
 }
+
 .footer-copyright {
     @apply mt-6;
 }
+
 .footer-copyright>p {
     font-size: 13px;
 }
+
 .footer-copyright a {
-    @apply text-blue-500 underline;
+    @apply text-blue-500 underline; 
 }
-#hr2{
+
+#hr2 {
     @apply h-[2px] bg-gray-300 my-2;
 }
+
 .footer-copyright-footer {
     @apply flex;
 }
+
 .footer-copyright-footer p {
-    @apply me-auto mb-10;     font-size: 13px;
+    @apply me-auto mb-10;
+    font-size: 13px;
 }
